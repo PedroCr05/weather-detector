@@ -1,5 +1,5 @@
 import "./App.css";
-import WeatherContent from "./components/WeatherContent/WeatherContent.jsx";
+import WeatherContent from "./components/WeatherContent.jsx";
 
 const App = () => {
   const weatherForecasts = [
@@ -42,6 +42,7 @@ const App = () => {
 
   return (
     <>
+      <Route path="/pokemon/new" element={<PokemonForm />} />
       <header>
         <h1>Weather Forecaster</h1>
       </header>
